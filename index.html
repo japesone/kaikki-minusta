@@ -1,0 +1,4830 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="http://bootswatch.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link href="https://bootswatch.com/yeti/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+       h6 {
+       color:#f04124;
+       text-transform: uppercase;
+       font-size:14px;
+       font-weight: bold;
+       }
+
+       .panel-title {
+       font-size:14px;
+       }
+
+       h6 a:link {text-decoration:none;color:#f04124!important;}
+       h6 a:active {text-decoration:none;color:#f04124!important;}
+       h6 a:visited {text-decoration:none;color:#f04124!important;}
+       h6 a:hover {text-decoration:none;color:#f04124!important;}
+
+       h2 {
+       font-size: 24 px;
+       font-weight: bold;
+       color: #333;
+       }
+
+       h4 {
+       font-size: 20 px;
+       font-weight: bold;
+       letter-spacing: 1px;
+       color: #333;
+       }
+
+       p {
+       margin: 0;
+       font-size: 12 px;
+       color: #333;
+
+       }
+
+       .table.tarkattiedot {
+       table-layout: fixed;
+       }
+       
+		.passikuva {
+       width: 100%;
+       height: 100%;
+       }
+       
+    </style>
+
+    <title>
+      Kaikki minusta - Pauliina Johanna Kumpulainen
+    </title>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" data-target=
+          "#bs-example-navbar-collapse-2" data-toggle="collapse" type=
+          "button"><span class="sr-only">Toggle navigation</span> <span class=
+          "icon-bar"></span> <span class="icon-bar"></span> <span class=
+          "icon-bar"></span></button> <a class="navbar-brand" href=
+          "index.html"><img height="100%" src="kaikkiminustalogo.png"></a>
+          <a class="navbar-brand" href="index.html">Kaikki minusta</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id=
+        "bs-example-navbar-collapse-2">
+          <ul class="nav navbar-nav navbar-left">
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="index.html">Kirjaudu ulos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="col-md-3 hidden-xs hidden-sm">
+       <a data-target="#passikuva" data-toggle="modal" href="#" role="button"><img src="pauliina.jpg" alt="" class="passikuva hidden-sm hidden-xs"></a>
+        <h6 class="hidden-sm hidden-xs"><small>Passikuva</small></h6>
+
+        <!-- Pystynavi -->
+        <ul class="nav nav-pills nav-stacked	">
+          <li class="active">
+            <a aria-expanded="true" data-toggle="tab" href="#mina"><span class=
+            "glyphicon glyphicon-user"></span> Minä</a>
+          </li>
+          <li class="">
+            <a aria-expanded="true" data-toggle="tab" href="#perhe"><span class=
+            "glyphicon glyphicon-home"></span> Perhe</a>
+          </li>
+
+          <li class="">
+            <a aria-expanded="false" data-toggle="tab" href=
+            "#koulutus"><span class="glyphicon glyphicon-education"></span>
+            Koulutus</a>
+          </li>
+
+          <li class="">
+            <a aria-expanded="false" data-toggle="tab" href="#tulot"><span class=
+            "glyphicon glyphicon-eur"></span> Tulot</a>
+          </li>
+
+          <li class="">
+            <a aria-expanded="false" data-toggle="tab" href=
+            "#terveys"><span class="glyphicon glyphicon-heart"></span> Terveys</a>
+          </li>
+
+          <li class="">
+            <a aria-expanded="false" data-toggle="tab" href=
+            "#omistukset"><span class="glyphicon glyphicon-duplicate"></span>
+            Omistukset</a>
+          </li>
+
+          <li class="">
+            <a aria-expanded="false" data-toggle="tab" href=
+            "#asetukset"><span class="glyphicon glyphicon-cog"></span>
+            Asetukset</a>
+          </li>
+        </ul>
+        <!-- /Pystynavi -->
+        
+<!-- Passikuva modal -->
+
+        <div aria-labelledby="myModalLabel" class="modal fade" id="passikuva"
+        role="dialog" tabindex="-1">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4>
+                  Passikuva
+                </h4>
+              </div>
+
+              <div class="modal-body">
+              	<h6>Nykyinen passikuva</h6>
+				<img src="pauliina.jpg" width="50%">
+				<h6>Varaa aika passikuvaan</h6>
+				<p>Seuraavat sinulle sopivat ajat ovat vapaina läheisissä valokuvaamoissa:</p>
+				<br>
+                <div class="table-responsive">
+                  <table class="table table-hover table-condensed">
+                    <tr>
+                      <th>
+                        Aika
+                      </th>
+                      <th>
+                        Valokuvaamo
+                      </th>
+                      <th>
+                        Hinta
+                      </th>
+                      <th>
+                        Varaa
+                      </th>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <strong>Huomenna 14:40</strong>
+                      </td>
+                      <td>
+                        Kuvaveljet Oy, Simeonintie 2, Vihti <span class=
+                        "label label-default">7 km</span>
+                      </td>
+                      <td>
+                        18 &euro;
+                      </td>
+                      <td>
+                        <a class="btn btn-success btn-xs" href=
+                        "http://www.kuvaveljet.fi/index.php/palvelut/passikuvat/" target=
+                        "_blank">Varaa</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <strong>Huomenna 15:20</strong>
+                      </td>
+                      <td>
+                        Kuvaveljet Oy, Simeonintie 2, Vihti <span class=
+                        "label label-default">7 km</span>
+                      </td>
+                      <td>
+                        18 &euro;
+                      </td>
+                      <td>
+                        <a class="btn btn-success btn-xs" href=
+                        "http://www.kuvaveljet.fi/index.php/palvelut/passikuvat/" target=
+                        "_blank">Varaa</a>
+                      </td>
+                    </tr>
+                </table>
+                </div>
+                <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal" type=
+                "button">Sulje</button>
+				</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Passikuva modal -->
+      </div>
+      <div class="col-md-9">	
+
+        <h2>
+          Pauliina Johanna Kumpulainen <small>010180-836B</small>
+        </h2>
+
+        <div aria-multiselectable="true" class="panel-group" id="accordion"
+        role="tablist">
+          <!-- katsastus -->
+
+          <div class="panel panel-warning" id="katsastus">
+            <div class="panel-heading panel-title" id="headingOne" role="tab">
+              <span class="glyphicon glyphicon-bell"></span> <b>Trafi:</b> <a aria-controls="collapseOne" aria-expanded=
+              "false" data-parent="#accordion" data-toggle="collapse" href=
+              "#collapseOne" role="button">Autosi on katsastettava 25.1.2016
+              mennessä.</a> <button class="close" data-dismiss="alert"
+              data-target="#katsastus" type="button"><span aria-hidden=
+              "true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+
+            <div aria-labelledby="headingOne" class="panel-collapse collapse"
+            id="collapseOne" role="tabpanel">
+              <div class="panel-body">
+                <p>
+                  Autosi <strong>Alfa Romeo 156 2.0 (ABC-111)</strong> on
+                  katsastettava <strong>25.1.2016</strong> mennessä. Seuraavat
+                  sinulle sopivat ajat ovat vapaina läheisillä
+                  katsastusasemilla:
+                </p>
+				<br>
+                <div class="table-responsive">
+                  <table class="table table-hover table-condensed">
+                    <tr>
+                      <th>
+                        Aika
+                      </th>
+                      <th>
+                        Katsastusasema
+                      </th>
+                      <th>
+                        Hinta
+                      </th>
+                      <th>
+                        Varaa
+                      </th>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <strong>Huomenna 8:00</strong>
+                      </td>
+                      <td>
+                        <a data-target="#k1Reitti" data-toggle="modal" href="#"
+                        role="button"><span class=
+                        "glyphicon glyphicon-map-marker"></span> K1
+                        Katsastajat, Ratastie 2, Vihti</a> <span class=
+                        "label label-default">9 km</span> <!-- Reittiohjeet -->
+
+                        <div aria-labelledby="myModalLabel" class="modal fade"
+                        id="k1Reitti" role="dialog" tabindex="-1">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4>
+                                  K1 Katsastajat, Ratastie 2, Vihti
+                                </h4>
+                              </div>
+
+                              <div class="modal-body">
+                                <iframe allowfullscreen="" frameborder="0"
+                                height="400" src=
+                                "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d126575.50744222493!2d24.301678709446218!3d60.28425616551329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x468de97b6ef939a9%3A0xf852dc353472a9d2!2sKotipolku%2C+Vihti!3m2!1d60.3100202!2d24.351607599999998!4m5!1s0x468de9c92eaae7db%3A0xaa7557d699534734!2sK1+Katsastajat%2C+Ratastie+2%2C+Vihti!3m2!1d60.3502355!2d24.3165116!5e0!3m2!1sfi!2sfi!4v1440919120436"
+                                style="border:0" width="100%"></iframe>
+                              </div>
+
+                              <div class="modal-footer">
+                                <button class="btn btn-default" data-dismiss=
+                                "modal" type="button">Sulje</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- /Reittiohjeet -->
+                      </td>
+                      <td>
+                        50 &euro;
+                      </td>
+                      <td>
+                        <a class="btn btn-success btn-xs" href=
+                        "http://varaa.autokatsastus.fi/" target=
+                        "_blank">Varaa</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <strong>Ylihuomenna 16:30</strong>
+                      </td>
+                      <td>
+                        <a data-target="#syReitti" data-toggle="modal" href="#"
+                        role="button"><span class=
+                        "glyphicon glyphicon-map-marker"></span> Suomen
+                        ykköskatsastus Oy, Sauvontie 6, Lohja</a> <span class=
+                        "label label-default">16 km</span> 
+                        <!-- Reittiohjeet -->
+
+                        <div aria-labelledby="myModalLabel" class="modal fade"
+                        id="syReitti" role="dialog" tabindex="-1">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4>
+                                  Suomen ykköskatsastus Oy, Sauvontie 6, Lohja
+                                </h4>
+                              </div>
+
+                              <div class="modal-body">
+                                <iframe allowfullscreen="" frameborder="0"
+                                height="400" src=
+                                "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d126655.24414028725!2d24.26087235616796!3d60.263653430747596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x468de97b6ef939a9%3A0xf852dc353472a9d2!2sKotipolku%2C+Vihti!3m2!1d60.3100202!2d24.351607599999998!4m5!1s0x468dc047df4571b9%3A0xc12ff76e6fde547c!2sSuomen+Ykk%C3%B6skatsastus+Oy%2C+Lohja!3m2!1d60.2792245!2d24.155523799999997!5e0!3m2!1sfi!2sfi!4v1440920693013"
+                                style="border:0" width="100%"></iframe>
+                              </div>
+
+                              <div class="modal-footer">
+                                <button class="btn btn-default" data-dismiss=
+                                "modal" type="button">Sulje</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- /Reittiohjeet -->
+                      </td>
+                      <td>
+                        50 &euro;
+                      </td>
+                      <td>
+                        <a class="btn btn-success btn-xs" href=
+                        "http://www.ykkoskatsastus.fi/" target=
+                        "_blank">Varaa</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <strong>Ylihuomenna 17:00</strong>
+                      </td>
+                      <td>
+                        <a data-target="#syReitti" data-toggle="modal" href="#"
+                        role="button"><span class=
+                        "glyphicon glyphicon-map-marker"></span> Suomen
+                        ykköskatsastus Oy, Sauvontie 6, Lohja</a> <span class=
+                        "label label-default">16 km</span> 
+                        <!-- Reittiohjeet -->
+
+                        <div aria-labelledby="myModalLabel" class="modal fade"
+                        id="syReitti" role="dialog" tabindex="-1">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4>
+                                  Suomen ykköskatsastus Oy, Sauvontie 6, Lohja
+                                </h4>
+                              </div>
+
+                              <div class="modal-body">
+                                <iframe allowfullscreen="" frameborder="0"
+                                height="400" src=
+                                "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d126655.24414028725!2d24.26087235616796!3d60.263653430747596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x468de97b6ef939a9%3A0xf852dc353472a9d2!2sKotipolku%2C+Vihti!3m2!1d60.3100202!2d24.351607599999998!4m5!1s0x468dc047df4571b9%3A0xc12ff76e6fde547c!2sSuomen+Ykk%C3%B6skatsastus+Oy%2C+Lohja!3m2!1d60.2792245!2d24.155523799999997!5e0!3m2!1sfi!2sfi!4v1440920693013"
+                                style="border:0" width="100%"></iframe>
+                              </div>
+
+                              <div class="modal-footer">
+                                <button class="btn btn-default" data-dismiss=
+                                "modal" type="button">Sulje</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- /Reittiohjeet -->
+                      </td>
+                      <td>
+                        50 &euro;
+                      </td>
+                      <td>
+                        <a class="btn btn-success btn-xs" href=
+                        "http://www.ykkoskatsastus.fi/" target=
+                        "_blank">Varaa</a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /katsastus -->
+          <!-- resepti -->
+
+          <div class="panel panel-info" id="resepti">
+            <div class="panel-heading panel-title" id="headingTwo" role="tab">
+              <span class="glyphicon glyphicon-info-sign"></span> <b>Kela: </b>
+              <a aria-controls="collapseTwo" aria-expanded="false" data-parent=
+              "#accordion" data-toggle="collapse" href="#collapseTwo" role=
+              "button">Reseptisi LOMUDAL-silmätipat vanhenee
+              1.2.2016<button class="close" data-dismiss="alert" data-target=
+              "#resepti" type="button"><span aria-hidden=
+              "true">&times;</span><span class=
+              "sr-only">Close</span></button></a>
+            </div>
+
+            <div aria-labelledby="headingTwo" class="panel-collapse collapse"
+            id="collapseTwo" role="tabpanel">
+              <div class="panel-body">
+                <p>
+                  Lääkereseptisi <strong>LOMUDAL-silmätipat</strong> voimassaolo
+                  päättyy <strong>1.2.2016</strong>.
+                </p>
+                <br>
+                <p>
+                  <a class="btn btn-success btn-xs" href=
+                  "http://www.kanta.fi/web/ammattilaisille/reseptin-uusiminen"
+                  target="_blank">Pyydä reseptin uusintaa</a>
+                </p>
+				<br>
+                <p>
+                  Sinulla on <strong>2x60x0,35ml</strong> saamatta. Tässä
+                  lähimpien apteekkien yhteystiedot:
+                </p>
+                <br>
+                <div class="table-responsive">
+                  <table class="table table-hover table-condensed">
+                    <tr>
+                      <th>
+                        Apteekki
+                      </th>
+                      <th>
+                        Aukioloajat
+                      </th>
+                      <th>
+                        Puhelinnumero
+                      </th>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <a data-target="#naReitti" data-toggle="modal" href="#"
+                        role="button"><span class=
+                        "glyphicon glyphicon-map-marker"></span> Nummelan Apteekki, Naaranpajuntie 1,
+                        Vihti</a> <span class="label label-default">4 km</span>
+                        <!-- Reittiohjeet -->
+
+                        <div aria-labelledby="myModalLabel" class="modal fade"
+                        id="naReitti" role="dialog" tabindex="-1">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4>
+                                  Nummelan Apteekki, Naaranpajuntie 1, Vihti
+                                </h4>
+                              </div>
+
+                              <div class="modal-body">
+                                <iframe allowfullscreen="" frameborder="0"
+                                height="400" src=
+                                "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d15806.04339886525!2d24.323180274921317!3d60.31710367149426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x468de97b6ef939a9%3A0xf852dc353472a9d2!2sKotipolku%2C+Vihti!3m2!1d60.3100202!2d24.351607599999998!4m5!1s0x468de9966aceb157%3A0x4ffaaf8e063ada89!2sNummelan+Apteekki%2C+Naaranpajuntie+1%2C+03100+Nummela!3m2!1d60.3326516!2d24.3223733!5e0!3m2!1sfi!2sfi!4v1440921617566"
+                                style="border:0" width="100%"></iframe>
+                              </div>
+
+                              <div class="modal-footer">
+                                <button class="btn btn-default" data-dismiss=
+                                "modal" type="button">Sulje</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- /Reittiohjeet -->
+                      </td>
+                      <td>
+                        ma-pe 9-19<br>
+                        la 9-15<br>
+                        su 12-16
+                      </td>
+                      <td>
+                        <span class="glyphicon glyphicon-earphone"></span> 09
+                        2252 490
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <a data-target="#vaReitti" data-toggle="modal" href="#"
+                        role="button"><span class=
+                        "glyphicon glyphicon-map-marker"></span> Veikkolan Apteekki, Eerikinkartanontie 2,
+                        Kirkkonummi</a> <span class="label label-default">11
+                        km</span> <!-- Reittiohjeet -->
+
+                        <div aria-labelledby="myModalLabel" class="modal fade"
+                        id="vaReitti" role="dialog" tabindex="-1">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4>
+                                  Veikkolan Apteekki, Eerikinkartanontie 2,
+                                  Kirkkonummi
+                                </h4>
+                              </div>
+
+                              <div class="modal-body">
+                                <iframe allowfullscreen="" frameborder="0"
+                                height="400" src=
+                                "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d31643.793432742867!2d24.365421647026697!3d60.284342382474584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x468de97b6ef939a9%3A0xf852dc353472a9d2!2sKotipolku%2C+Vihti!3m2!1d60.3100202!2d24.351607599999998!4m5!1s0x468dec3c813ace29%3A0x93dcff67094004e2!2sVeikkolan+Apteekki%2C+Eerikinkartanontie+2%2C+02880+Veikkola!3m2!1d60.2698714!2d24.4423815!5e0!3m2!1sfi!2sfi!4v1440921961909"
+                                style="border:0" width="100%"></iframe>
+                              </div>
+
+                              <div class="modal-footer">
+                                <button class="btn btn-default" data-dismiss=
+                                "modal" type="button">Sulje</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- /Reittiohjeet -->
+                      </td>
+                      <td>
+                        ma-pe 9-18<br>
+                        la 9-14
+                      </td>
+                      <td>
+                        <span class="glyphicon glyphicon-earphone"></span> 09
+                        8874 2810
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /resepti -->
+        </div>
+
+        <div class="tab-content" id="myTabContent">
+          <!-- Tabit alkaa -->
+
+          <div class="tab-pane fade active in hidden-xs hidden-sm" id="mina">
+            <!-- Minä -->
+
+              <h4>Minä</h4>
+
+              <h6>Nimi <small>VTJ</small></h6>
+              <!-- NimiModal -->
+
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "nimi" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Nimi
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <h6>
+                        Nimihistoria
+                      </h6>
+
+                      <table class=
+                      "table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            16.7.2011-
+                          </td>
+                          <td>
+                            Kumpulainen, Pauliina Johanna
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            1.1.1980-15.7.2011
+                          </td>
+                          <td>
+                            Ketonen, Pauliina Johanna
+                          </td>
+                        </tr>
+                      </table>
+					<h6>Lisätiedot</h6>
+                      <table class=
+                      "table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Kutsumanimi
+                          </td>
+                          <td>
+                            Paula
+                          </td>
+                        </tr>
+                        </table>
+                                            </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /NimiModal -->
+              <a data-target="#nimi"
+              data-toggle="modal" href="#" role="button">Kumpulainen, Pauliina Johanna</a>
+              <h6>Kotiosoite <small>VTJ</small></h6>
+              <!-- KotiosoiteModal -->
+
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "kotiosoite" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Kotiosoite
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <h6>
+                        Osoitehistoria
+                      </h6>
+
+                      <table class=
+                      "table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            28.3.2011-
+                          </td>
+                          <td>
+                            Kotikatu 18, 03100 Vihti
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            16.8.1999-27.3.2011
+                          </td>
+                          <td>
+                            Merkkitie 17 b7, 65100 Vaasa
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            1.1.1980-15.8.1999
+                          </td>
+                          <td>
+                            Karjalankatu 8, 24100 Salo
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /KotiosoiteModal -->
+              <a data-target="#kotiosoite"
+              data-toggle="modal" href="#" role="button">Kotikatu 16, 03100 Vihti</a>
+              <h6>Puhelinnumero <small>VTJ</small>
+              </h6>
+              <p>+358 40 1234567</p>
+              <h6>Sähköpostiosoite <small>VTJ</small>
+              </h6>
+              pauliina.kumpulainen@sahkoposti.fi
+              <h6>Kansalaisuus <small>VTJ</small>
+              </h6>
+              Suomi
+              <h6>Äidinkieli <small>VTJ</small>
+              </h6>
+              suomi
+              <h6>Ammatti <small>VTJ</small>
+              </h6>
+              Vaatesuunnittelija
+            
+
+            <!-- /Minä -->
+
+          </div>
+          <div class="tab-pane fade hidden-xs hidden-sm" id="perhe">
+            <!-- Perhe -->
+
+              <h4>Perhe</h4>
+              <h6>Vanhemmat <small>VTJ</small>
+              </h6>
+
+              <p>
+                Ketonen, Juhani Antero (s. 15.10.1955)
+              </p>
+
+              <p>
+                Ketonen, Helena Marjatta (s. 6.4.1956)
+              </p>
+
+              <h6>Puoliso<small>VTJ</small></h6>
+
+              <p>
+                <a data-target="#puoliso" data-toggle="modal" href="#" role=
+                "button">Kumpulainen, Matti Johannes (s. 12.9.1978)</a>
+              </p>
+              <!-- PuolisoModal -->
+
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "puoliso" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Puoliso
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <h6>
+                        Avioliitto
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Vihkimispäivä
+                          </td>
+                          <td>
+                            16.7.2011
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Vihkimistapa
+                          </td>
+                          <td>
+                            Siviilivihkiminen
+                          </td>
+                        </tr>
+                      </table>
+
+                      <h6>
+                        Aviopuoliso
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Nimi
+                          </td>
+                          <td>
+                            Kumpulainen Matti Johannes
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Kansalaisuus
+                          </td>
+                          <td>
+                            Suomi
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Syntymäaika
+                          </td>
+                          <td>
+                            12.9.1978
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /PuolisoModal -->
+
+              <h6>Lapset <small>VTJ</small></h6>
+
+              <p>
+                Kumpulainen Onni Matias (s. 1.5.2013)
+              </p>
+            
+            <!-- /Perhe -->
+          </div>
+
+          <div class="tab-pane fade hidden-xs hidden-sm" id="koulutus">
+            <!-- Koulutus -->
+
+            <h4>
+              Koulutus
+            </h4>
+
+            <h6>
+              Tutkinnot <small>TOR</small>
+            </h6>
+
+            <p>
+              <a data-target="#taiteenmaisteri" data-toggle="modal" href="#" role=
+                "button">Taiteen maisteri, Taideteollinen korkeakoulu</a>
+            </p>
+              <!-- taiteenmaisterimodal -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "taiteenmaisteri" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Taiteen maisteri, Taideteollinen korkeakoulu
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Perustiedot</h6>
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                          Tutkintonimike
+                          </td>
+                          <td>
+                          Taiteen maisteri
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Tutkinnon myöntäjä</td>
+                          <td>Taideteollinen korkeakoulu</td>
+                        </tr>
+                        <tr>
+                          <td>Suorituspäivämäärä</td>
+                          <td>31.5.2007</td>
+                        </tr>
+                    </table>
+                    <h6>Pääaine: Pukusuunnittelu</h6>
+                    <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>Suoritettu laajuus</td>
+                          <td>85 op</td>
+                        </tr>
+                        <tr>
+                          <td>Arvosana</td>
+                          <td>4/5 (kiitettävä)</td>
+                        </tr>
+					  </table>
+                     <h6>Sivuaine: Graafinen suunnittelu</h6>
+                    <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>Suoritettu laajuus</td>
+                          <td>25 op</td>
+                        </tr>
+                        <tr>
+                          <td>Arvosana</td>
+                          <td>3/5 (hyvä)</td>
+                        </tr>
+					  </table>
+					  
+                    <h6>Sivuaine: Yrittäjyys</h6>
+                    <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>Suoritettu laajuus</td>
+                          <td>10 op</td>
+                        </tr>
+                        <tr>
+                          <td>Arvosana</td>
+                          <td>5/5 (erinomainen)</td>
+                        </tr>
+					  </table>
+					  
+					</div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /taiteenmaisterimodal --> 
+            <p>
+              <a data-target="#taiteenkandi" data-toggle="modal" href="#" role=
+                "button">Taiteen kandidaatti, Taideteollinen korkeakoulu</a>
+            </p>
+              <!-- taiteenkandimodal -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "taiteenkandi" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Taiteen kandidaatti, Taideteollinen korkeakoulu
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Perustiedot</h6>
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                          Tutkintonimike
+                          </td>
+                          <td>
+                          Taiteen kandidaatti
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Tutkinnon myöntäjä</td>
+                          <td>Taideteollinen korkeakoulu</td>
+                        </tr>
+                        <tr>
+                          <td>Suorituspäivämäärä</td>
+                          <td>16.3.2005</td>
+                        </tr>
+                    </table>
+                    <h6>Pääaine: Pukusuunnittelu</h6>
+                    <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>Suoritettu laajuus</td>
+                          <td>110 op</td>
+                        </tr>
+                        <tr>
+                          <td>Arvosana</td>
+                          <td>5/5 (erinomainen)</td>
+                        </tr>
+					  </table>
+                     <h6>Sivuaine: Kasvatustiede</h6>
+                    <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>Suoritettu laajuus</td>
+                          <td>60 op</td>
+                        </tr>
+                        <tr>
+                          <td>Arvosana</td>
+                          <td>3/5 (hyvä)</td>
+                        </tr>
+					  </table>
+					  
+                    <h6>Sivuaine: Filosofia</h6>
+                    <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>Suoritettu laajuus</td>
+                          <td>10 op</td>
+                        </tr>
+                        <tr>
+                          <td>Arvosana</td>
+                          <td>5/5 (erinomainen)</td>
+                        </tr>
+					  </table>
+					  
+					</div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /taiteenkandimodal -->
+            <h6>
+              Opiskeluoikeudet <small>TOR</small>
+            </h6>
+
+            <p>
+              Kansainvälisen design liiketoiminnan johtamisen maisteriohjelma,
+              Aalto-yliopisto
+            </p>
+            <!-- /Koulutus -->
+          </div>
+
+          <div class="tab-pane fade hidden-xs hidden-sm" id="tulot">
+            <!-- Tulot -->
+            
+            <h4>Tulot</h4>
+            
+              <h6>Viimeisen kuukausi <small>TR</small></h6>
+              	<p>3 628,57 &euro; ennakonpidätyksen alaista tuloa</p>
+                <p>1 179,29 &euro; ennakonpidätystä</p>
+                <p>206,83 &euro; työeläkemaksuja</p>
+            	<p>26,35 &euro; työttömyysvakuutusmaksuja</p>
+              <h6>Vuoden alusta <small>TR</small></h6>
+              	<p>3 628,57 &euro; ennakonpidätyksen alaista tuloa</p>
+                <p>1 179,29 &euro; ennakonpidätystä</p>
+                <p>206,83 &euro; työeläkemaksuja</p>
+            	<p>26,35 &euro; työttömyysvakuutusmaksuja</p>
+              <h6>Veroprosentti <small>TR</small></h6>
+				<p>32,5 %</p>
+
+            
+            <!-- /Tulot -->
+          </div>
+
+          <div class="tab-pane fade hidden-xs hidden-sm" id="terveys">
+            <!-- Terveys -->
+
+              <h4>
+                Terveys
+              </h4>
+
+              <h6>Reseptit <small>Kanta</small></h6>
+
+              <p>
+                <a data-target="#reseptit1" data-toggle="modal" href="#" role=
+                "button">Kestine LYO 20 mg tabletti, kylmäkuivattu</a>
+              </p>
+
+              <p>
+                <a data-target="#reseptit2" data-toggle="modal" href="#" role=
+                "button">BECLONASAL FORTE AQUA 100 mikrog/annos nenäsumute, suspensio</a>
+              </p>
+
+              <p>
+                <a data-target="#reseptit3" data-toggle="modal" href="#" role=
+                "button">LOMUDAL 40 mg/ml silmätipat, liuos, kerta-annospipetti</a>
+              </p>
+              <!-- Reseptit1Modal -->
+
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "reseptit1" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Reseptit
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <h6>
+                        Kestine LYO 20 mg tabletti, kylmäkuivattu
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Määräyspäivä
+                          </td>
+                          <td>
+                            24.3.2015
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Lääke
+                          </td>
+                          <td>
+                            Kestine LYO 20 mg tabletti, kylmäkuivattu
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Määrätty määrä
+                          </td>
+                          <td>
+                            1X100 fol
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Lääkettä saamatta
+                          </td>
+                          <td>
+                            0
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Resepti voimassa saakka
+                          </td>
+                          <td>
+                            -
+                          </td>
+                        </tr>
+                      </table>
+
+                    </div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Reseptit1Modal -->
+              
+              
+              <!-- Reseptit2Modal -->
+
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "reseptit2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Reseptit
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <h6>
+                        BECLONASAL FORTE AQUA 100 mikrog/annos nenäsumute,
+                        suspensio
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Määräyspäivä
+                          </td>
+                          <td>
+                            1.4.2015
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Lääke
+                          </td>
+                          <td>
+                            BECLONASAL FORTE AQUA 100 mikrog/annos nenäsumute,
+                            suspensio
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Määrätty määrä
+                          </td>
+                          <td>
+                            2X200 annosta
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Lääkettä saamatta
+                          </td>
+                          <td>
+                            200 annosta
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Resepti voimassa saakka
+                          </td>
+                          <td>
+                            1.4.2015
+                          </td>
+                        </tr>
+                      </table>
+					</div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Reseptit2Modal -->
+
+              <!-- Reseptit3Modal -->
+
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "reseptit3" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Reseptit
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <h6>
+                        LOMUDAL 40 mg/ml silmätipat, liuos, kerta-annospipetti
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Määräyspäivä
+                          </td>
+                          <td>
+                            1.4.2014
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Lääke
+                          </td>
+                          <td>
+                            LOMUDAL 40 mg/ml silmätipat, liuos,
+                            kerta-annospipetti
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Määrätty määrä
+                          </td>
+                          <td>
+                            3X60 x 0,35 ml
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Lääkettä saamatta
+                          </td>
+                          <td>
+                            2X60X0,35 ML
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Resepti voimassa saakka
+                          </td>
+                          <td>
+                            1.4.2015
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Reseptit3Modal -->
+
+			<h6>Lääkärintodistukset <small>KANTA</small></h6>
+			<p><a data-target="#laakarintodistus" data-toggle="modal" href="#"
+                role="button">J06.9 Akuutti ylähengitystieinfektio (22.12.2015)</a></p>
+
+              <!-- akuuttimodal -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "laakarintodistus" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Lääkärintodistus
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Sairauden tiedot</h6>
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                          Merkittävin työkykyä alentava sairaus tai vamma
+                          </td>
+                          <td>
+                          J06.9 Akuutti ylähengitystieinfektio
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Muut työkykyä alentavat sairaudet</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>Työkyvyttömyysaika</td>
+                          <td>22.12.2015-23.12.2015</td>
+                        </tr>
+                        <tr>
+                          <td>Päivä, jona lääkäri totesi työkyvyttömyyden</td>
+                          <td>22.12.2015</td>
+                        </tr>
+                        <tr>
+                          <td>Kuntoutusarve</td>
+                          <td>Tällä hetkellä ei tarvetta</td>
+                        </tr>
+					  </table>
+                    <h6>Lääkärin tiedot</h6>
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                          Nimi
+                          </td>
+                          <td>
+                          Lasse Lääkäri
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                          Rekisteröintitunnus
+                          </td>
+                          <td>
+                          10023456789
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                          Puhelinnumero
+                          </td>
+                          <td>
+                          040 1234567
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /akuuttimodal --> 
+              
+            <!-- /Terveys -->
+          </div>
+
+          <div class="tab-pane fade hidden-xs hidden-sm" id="omistukset">
+            <!-- Omistukset -->
+
+              <h4>
+                Omistukset
+              </h4>
+
+              <h6>Kiinteistöt<small>KR</small></h6>
+
+              <p>
+                <a data-target="#kiinteistot" data-toggle="modal" href="#"
+                role="button">Tila 123-456-78-90, 1030m&sup2;, Vihti <span class=
+                "glyphicon glyphicon-list-all details"></span></a>
+              </p>
+              <!-- KiinteistötModal -->
+
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "kiinteistot" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Kiinteistö 123-456-78-90
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <h6>
+                        Perustiedot
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Rekisteriyksikkölaji
+                          </td>
+                          <td>
+                            Tila
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Kunta
+                          </td>
+                          <td>
+                            Vihti
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Pinta-ala
+                          </td>
+                          <td>
+                            1030 m&sup2;
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Nimi
+                          </td>
+                          <td>
+                            K350t5
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Omistusmuoto
+                          </td>
+                          <td>
+                            Omistaja
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Omistusosuus
+                          </td>
+                          <td>
+                            1/2
+                          </td>
+                        </tr>
+                      </table>
+
+                      <h6>
+                        Panttikirjat
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Päiväys
+                          </td>
+                          <td>
+                            1.7.2010
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Tunnus
+                          </td>
+                          <td>
+                            111/pp.kk.vvvv/12345
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Kohde (kiinteistötunnus)
+                          </td>
+                          <td>
+                            123-456-78-90
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Kiinnitys
+                          </td>
+                          <td>
+                            50 000,00 ä
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Muoto
+                          </td>
+                          <td>
+                            Kirjallinen
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Saajat/Haltijat
+                          </td>
+                          <td>
+                            Pankki Oyj
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /KiinteistötModal -->
+
+              <h6>Ajoneuvot
+                <small>ALR</small>
+              </h6>
+
+              <p>
+                <a data-target="#ajoneuvot" data-toggle="modal" href="#" role=
+                "button">Henkilöauto Alfa Romeo 156 2.0 (ABC-111)</a>
+              </p>
+              <!-- AjoneuvoModal -->
+
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "ajoneuvot" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Henkilöauto Alfa Romeo 156 2.0 (ABC-111)
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <h6>
+                        Perustiedot
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Haltija
+                          </td>
+                          <td>
+                            Kumpulainen, Pauliina Johanna
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Omistaja
+                          </td>
+                          <td>
+                            Kumpulainen, Matti Johannes
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Rekisteritunnus
+                          </td>
+                          <td>
+                            ABC-111
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Valmistenumero
+                          </td>
+                          <td>
+                            ZAR93200000001234567
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Ensirekisteröinti Suomeen
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Tyyppihyväksyntänumero
+                          </td>
+                          <td>
+                            e3*98/14*0034*10
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Variantti
+                          </td>
+                          <td>
+                            AXA100
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Versio
+                          </td>
+                          <td>
+                            52B
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Käyttö
+                          </td>
+                          <td>
+                            Yksityinen
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Vakuutus
+                          </td>
+                          <td>
+                            Vakuutusyhtiö Oy 11.12.2012
+                          </td>
+                        </tr>
+                      </table>
+
+                      <h6>
+                        Moottorin tiedot
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Iskutilavuus
+                          </td>
+                          <td>
+                            1970 cm&sup3;
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Käyttövoima
+                          </td>
+                          <td>
+                            Bensiini
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Suurin nettoteho
+                          </td>
+                          <td>
+                            122 kW
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Melu ohiajossa
+                          </td>
+                          <td>
+                            72 dB
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Melu paikoillaan
+                          </td>
+                          <td>
+                            80 dB
+                          </td>
+                        </tr>
+                      </table>
+
+                      <h6>
+                        Katsastustiedot
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Määräaikaiskatsastettu
+                          </td>
+                          <td>
+                            16.4.2014
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Seuraava katsastusväli
+                          </td>
+                          <td>
+                            25.7.2014-25.11.2015
+                          </td>
+                        </tr>
+                      </table>
+
+                      <h6>
+                        Kulutus- ja päästötiedot
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Kulutus maantieajossa
+                          </td>
+                          <td>
+                            6,6 l/100 km
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Kulutus kaupunkiajossa
+                          </td>
+                          <td>
+                            12,2 l/100 km
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Yhdistetty kulutus
+                          </td>
+                          <td>
+                            8,6 l/100 km
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            C02 Yhdistetty
+                          </td>
+                          <td>
+                            205 g/km
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /AjoneuvotModal -->
+
+              <h6>Yritykset <small>YTJ</small></h6>
+
+              <p><a data-target="#yritykset" data-toggle="modal" href="#" role=
+                "button">Pauliinas (1234567-0)</a>
+              </p>
+              <!-- YrityksetModal -->
+
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "yritykset" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Pauliinas (1234567-0)
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Y-tunnus
+                          </td>
+                          <td>
+                            1234567-0
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Toiminimi
+                          </td>
+                          <td>
+                            Pauliinas
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Yritysmuoto
+                          </td>
+                          <td>
+                            Yksityinen elinkeinonharjoittaja
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Kotipaikka
+                          </td>
+                          <td>
+                            Vihti
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Yrityksen kieli
+                          </td>
+                          <td>
+                            suomi
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Päätoimiala
+                          </td>
+                          <td>
+                            Teollinen muotoilu (74109)
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Postiosoite
+                          </td>
+                          <td>
+                            Kotikatu 18, 03100 Vihti
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Sähköposti
+                          </td>
+                          <td>
+                            pauliina.kumpulainen@sahkoposti.fi
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Puhelin
+                          </td>
+                          <td>
+                            +358401234567
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /YrityksetModal -->
+            <!-- /Omistukset -->
+          </div>
+
+          <div class="tab-pane fade hidden-xs hidden-sm" id="asetukset">
+            <!-- Asetukset -->
+
+            <h4 class="hidden-xs">
+              Asetukset
+            </h4>
+			
+			<h6>Tietolähteet</h6>
+
+				<p><a data-target="#vtj" data-toggle="modal" href="#" role=
+                "button">Väestötietojärjestelmä</a> <small>VTJ</small></p>
+
+              <!-- VTJmodal -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "vtj" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Väestötietojärjestelmä <small>VTJ</small>
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.vaestorekisterikeskus.fi/" target=
+                "_blank">Väestörekisterikeskus</a>
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /VTJmodal -->
+
+				<p><a data-target="#kr" data-toggle="modal" href="#" role=
+                "button">Kiinteistörekisteri</a> <small>KR</small></p>
+
+              <!-- KRmodal -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "kr" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Kiinteistörekisteri <small>KR</small>
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.maanmittauslaitos.fi/" target=
+                "_blank">Maanmittauslaitos</a>
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /KRmodal -->
+              
+				<p><a data-target="#alr" data-toggle="modal" href="#" role=
+                "button">Ajoneuvoliikennerekisteri</a> <small>ALR</small></p>
+
+              <!-- ALRmodal -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "alr" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Ajoneuvoliikennerekisteri <small>ALR</small>
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.trafi.fi/" target=
+                "_blank">Liikenteen turvallisuusvirasto Trafi</a>
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /ALRmodal -->
+
+				<p><a data-target="#ytj" data-toggle="modal" href="#" role=
+                "button">Yritys- ja yhteisötietojärjestelmä</a> <small>YTJ</small></p>
+
+              <!-- YTJmodal -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "ytj" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Yritys- ja yhteisötietojärjestelmä <small>YTJ</small>
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.prh.fi/" target=
+                "_blank">Patentti- ja rekisterihallitus</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.vero.fi/" target=
+                "_blank">Verohallinto</a>
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /YTJmodal -->    
+              
+	<p><a data-target="#tor" data-toggle="modal" href="#" role=
+                "button">Todennetun osaamisen rekisteri</a> <small>TOR</small></p>
+
+              <!-- TORmodal -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "tor" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Todennetun osaamisen rekisteri <small>TOR</small>
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.oph.fi/" target=
+                "_blank">Opetushallitus</a>
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /TORmodal -->    
+              
+	<p><a data-target="#tr" data-toggle="modal" href="#" role=
+                "button">Tulorekisteri</a> <small>TR</small></p>
+
+              <!-- TRmodal -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "tr" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Tulorekisteri <small>TR</small>
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.vero.fi/" target=
+                "_blank">Verohallinto</a>
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /TRmodal -->  
+              
+              
+	<p><a data-target="#kanta" data-toggle="modal" href="#" role=
+                "button">Kansallinen terveysarkisto</a> <small>KANTA</small></p>
+
+              <!-- KANTAmodal -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "kanta" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Kansallinen terveysarkisto <small>KANTA</small>
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.oph.fi/" target=
+                "_blank">Sosiaali- ja terveysministeriö</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.kela.fi/" target=
+                "_blank">Kansaneläkelaitos</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.thl.fi/" target=
+                "_blank">Terveyden ja hyvinvoinnin laitos</a>
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /KANTAmodal --> 
+              
+              
+	<p><a data-target="#passi" data-toggle="modal" href="#" role=
+                "button">Passirekisteri</a> <small>PASSI</small></p>
+
+              <!-- PASSImodal -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "passi" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Passirekisteri <small>PASSI</small>
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.poliisi.fi/" target=
+                "_blank">Poliisi</a>
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /PASSImodal -->  
+
+			<h6>Ilmoitukset</h6>
+			
+			<p><span class=
+                "glyphicon glyphicon-ok"></span> <a data-target="#smsnotify" data-toggle="modal" href="#" role=
+                "button">Tekstiviesti</a></p>
+			<p><span class=
+                "glyphicon glyphicon-ok"></span> <a data-target="#emailnotify" data-toggle="modal" href="#" role=
+                "button">Sähköposti</a></p>
+			<p><span class=
+                "glyphicon glyphicon-remove"></span> <a data-target="#calendarnotify" data-toggle="modal" href="#" role=
+                "button">Kalenteri</a></p>
+
+              <!-- SMSmodal -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "smsnotify" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Tekstiviesti-ilmoitukset
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Salli ilmoitukset seuraavilta viranomaisilta</h6>
+                      <table class="table table-hover table-condensed">
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Väestörekisterikeskus
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Maanmittauslaitos
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Liikenteen turvallisuusvirasto Trafi
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Patentti- ja rekisterihallitus
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Opetushallitus
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Verohallinto
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Kansaneläkelaitos
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Poliisi
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-dismiss="modal" type="button">Tallenna</button>
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /SMSmodal -->
+              
+              <!-- EMAILmodal -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "emailnotify" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Sähköposti-ilmoitukset
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Salli ilmoitukset seuraavilta viranomaisilta</h6>
+                      <table class="table table-hover table-condensed">
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Väestörekisterikeskus
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Maanmittauslaitos
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Liikenteen turvallisuusvirasto Trafi
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Patentti- ja rekisterihallitus
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Opetushallitus
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Verohallinto
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Kansaneläkelaitos
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Poliisi
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-dismiss="modal" type="button">Tallenna</button>
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /EMAILmodal -->
+              
+              <!-- CALmodal -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "calendarnotify" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Kalenteri-ilmoitukset
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Salli ilmoitukset seuraavilta viranomaisilta</h6>
+                      <table class="table table-hover table-condensed">
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Väestörekisterikeskus
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Maanmittauslaitos
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Liikenteen turvallisuusvirasto Trafi
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Patentti- ja rekisterihallitus
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Opetushallitus
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Verohallinto
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Kansaneläkelaitos
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Poliisi
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-dismiss="modal" type="button">Tallenna</button>
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /CALmodal -->
+
+	<h6>Tietojen luovutus</h6>
+			
+			<p><span class=
+                "glyphicon glyphicon-remove"></span> <a data-target="#suoramarkkinointi" data-toggle="modal" href="#" role=
+                "button">Suoramarkkinointi</a></p>
+			<p><span class=
+                "glyphicon glyphicon-ok"></span> <a data-target="#asiakasrekisterit" data-toggle="modal" href="#" role=
+                "button">Asiakasrekisterit</a></p>
+			<p><span class=
+                "glyphicon glyphicon-remove"></span> <a data-target="#henkilomatrikkeli" data-toggle="modal" href="#" role=
+                "button">Henkilömatrikkeli</a></p>
+			<p><span class=
+                "glyphicon glyphicon-ok"></span> <a data-target="#sukututkimus" data-toggle="modal" href="#" role=
+                "button">Sukututkimus</a></p>
+                
+                
+              <!-- suoramarkkinointimodal -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "suoramarkkinointi" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Suoramarkkinointi
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Tietojen luovutus suoramarkkinointiin</h6>
+                      <table class="table table-hover table-condensed">
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Nimi- ja osoitetietoja voidaan luovuttaa suoramarkkinointitarkoituksiin tai markkina- ja mielipidetutkimuksiin. Suoramarkkinointi koskee vain postitse saapuvaa mainontaa.
+                          </td>
+                        </tr>
+					  </table>
+
+					</div>
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-dismiss="modal" type="button">Tallenna</button>
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /suoramarkkinointimodal -->                
+                
+                
+              <!-- asiakasrekisterimodal -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "asiakasrekisterit" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Suoramarkkinointi
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Tietojen luovutus suoramarkkinointiin</h6>
+                      <table class="table table-hover table-condensed">
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+							Tietoja voidaan luovuttaa yrityksille, jotka päivittävät asiakasrekistereitään väestötietojärjestelmän tiedoilla (esimerkiksi lehtitalot). Pankeille, vakuutusyhtiöille, Veikkaus Oy:lle, Raha-automaattiyhdistykselle sekä Fintoto Oy:lle tiedot voidaan lain nojalla luovuttaa kiellosta huolimatta.
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-dismiss="modal" type="button">Tallenna</button>
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /asiakasrekisterimodal -->   
+
+              <!-- henkilomatrikkelimodal -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "henkilomatrikkeli" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Henkilömatrikkeli
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Tietojen luovutus henkilömatrikkeleihin</h6>
+                      <table class="table table-hover table-condensed">
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+							Tietoja voidaan luovuttaa esimerkiksi oppilaitoksen entisistä oppilaista tai tietyn tutkinnon suorittaneista tehtävää matrikkelia varten.
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-dismiss="modal" type="button">Tallenna</button>
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /henkilomatrikkelimodal -->   
+
+
+              <!-- sukututkimusmodal -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "sukututkimus" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Sukututkimus
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Tietojen luovutus sukututkimukseen</h6>
+                      <table class="table table-hover table-condensed">
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+							Tietoja voidaan luovuttaa sukututkimustarkoituksiin.
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-dismiss="modal" type="button">Tallenna</button>
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /sukututkimusmodal -->          
+            <!-- /Asetukset -->
+          </div>
+        </div>
+        <!-- Tabit päättyy -->
+        
+        <!-- Mobiiliversio haitari -->
+        <div aria-multiselectable="true" class="panel-group hidden-md hidden-lg" id="mobiilihaitari"
+        role="tablist">
+        
+          <div class="panel panel-default" id="minamobi">
+            <a aria-controls="collapseMina" aria-expanded="false" data-parent=
+              "#mobiilihaitari" data-toggle="collapse" href="#collapseMina" role=
+              "button"><div class="panel-heading panel-title" id="headingTwo" role="tab">
+              <span class="glyphicon glyphicon-user"></span> Minä
+            </div></a>
+
+            <div aria-labelledby="headingMina" class="panel-collapse collapse"
+            id="collapseMina" role="tabpanel">
+              <div class="panel-body">
+
+            <!-- Minä -->
+
+              <h4>Minä</h4>
+
+              <h6>Nimi <small>VTJ</small></h6>
+
+              <a data-target="#nimi2"
+              data-toggle="modal" href="#" role="button">Kumpulainen, Pauliina Johanna</a>
+              <h6>Kotiosoite <small>VTJ</small></h6>
+              <a data-target="#kotiosoite2"
+              data-toggle="modal" href="#" role="button">Kotikatu 16, 03100 Vihti</a>
+              <h6>Puhelinnumero <small>VTJ</small>
+              </h6>
+              <p>+358 40 1234567</p>
+              <h6>Sähköpostiosoite <small>VTJ</small>
+              </h6>
+              pauliina.kumpulainen@sahkoposti.fi
+              <h6>Kansalaisuus <small>VTJ</small>
+              </h6>
+              Suomi
+              <h6>Äidinkieli <small>VTJ</small>
+              </h6>
+              suomi
+              <h6>Ammatti <small>VTJ</small>
+              </h6>
+              Vaatesuunnittelija
+            
+              <!-- /Minä -->
+			  </div>
+			</div>
+          </div>
+          
+          <div class="panel panel-default" id="perhemobi">
+            <a aria-controls="collapsePerhe" aria-expanded="false" data-parent=
+              "#mobiilihaitari" data-toggle="collapse" href="#collapsePerhe" role=
+              "button"><div class="panel-heading panel-title" id="headingTwo" role="tab">
+              <span class="glyphicon glyphicon-home"></span> Perhe
+            </div></a>
+
+            <div aria-labelledby="headingPerhe" class="panel-collapse collapse"
+            id="collapsePerhe" role="tabpanel">
+              <div class="panel-body">
+            <!-- Perhe -->
+
+              <h4>Perhe</h4>
+              <h6>Vanhemmat <small>VTJ</small>
+              </h6>
+
+              <p>
+                Ketonen, Juhani Antero (s. 15.10.1955)
+              </p>
+
+              <p>
+                Ketonen, Helena Marjatta (s. 6.4.1956)
+              </p>
+
+              <h6>Puoliso<small>VTJ</small></h6>
+
+              <p>
+                <a data-target="#puoliso2" data-toggle="modal" href="#" role=
+                "button">Kumpulainen, Matti Johannes (s. 12.9.1978)</a>
+              </p>
+
+              <h6>Lapset <small>VTJ</small></h6>
+
+              <p>
+                Kumpulainen Onni Matias (s. 1.5.2013)
+              </p>
+            
+              <!-- /Perhe -->
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default" id="koulutusmobi">
+            <a aria-controls="collapseKoulutus" aria-expanded="false" data-parent=
+              "#mobiilihaitari" data-toggle="collapse" href="#collapseKoulutus" role=
+              "button"><div class="panel-heading panel-title" id="headingKoulutus" role="tab">
+              <span class="glyphicon glyphicon-education"></span> Koulutus
+            </div></a>
+
+            <div aria-labelledby="headingKoulutus" class="panel-collapse collapse"
+            id="collapseKoulutus" role="tabpanel">
+              <div class="panel-body">
+            <!-- Koulutus -->
+
+            <h4>
+              Koulutus
+            </h4>
+
+            <h6>
+              Tutkinnot <small>TOR</small>
+            </h6>
+
+            <p>
+              <a data-target="#taiteenmaisteri2" data-toggle="modal" href="#" role=
+                "button">Taiteen maisteri, Taideteollinen korkeakoulu</a>
+            </p>            <p>
+              <a data-target="#taiteenkandi2" data-toggle="modal" href="#" role=
+                "button">Taiteen kandidaatti, Taideteollinen korkeakoulu</a>
+            </p>
+             
+            <h6>
+              Opiskeluoikeudet <small>TOR</small>
+            </h6>
+
+            <p>
+              Kansainvälisen design liiketoiminnan johtamisen maisteriohjelma,
+              Aalto-yliopisto
+            </p>
+            <!-- /Koulutus -->
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default" id="tulotmobi">
+            <a aria-controls="collapseTulot" aria-expanded="false" data-parent=
+              "#mobiilihaitari" data-toggle="collapse" href="#collapseTulot" role=
+              "button"><div class="panel-heading panel-title" id="headingTulot" role="tab">
+              <span class="glyphicon glyphicon-eur"></span> Tulot
+            </div></a>
+
+            <div aria-labelledby="headingTulot" class="panel-collapse collapse"
+            id="collapseTulot" role="tabpanel">
+              <div class="panel-body">
+            <!-- Tulot -->
+            
+            <h4>Tulot</h4>
+            
+              <h6>Viimeisen kuukausi <small>TR</small></h6>
+              	<p>3 628,57 &euro; ennakonpidätyksen alaista tuloa</p>
+                <p>1 179,29 &euro; ennakonpidätystä</p>
+                <p>206,83 &euro; työeläkemaksuja</p>
+            	<p>26,35 &euro; työttömyysvakuutusmaksuja</p>
+              <h6>Vuoden alusta <small>TR</small></h6>
+              	<p>3 628,57 &euro; ennakonpidätyksen alaista tuloa</p>
+                <p>1 179,29 &euro; ennakonpidätystä</p>
+                <p>206,83 &euro; työeläkemaksuja</p>
+            	<p>26,35 &euro; työttömyysvakuutusmaksuja</p>
+              <h6>Veroprosentti <small>TR</small></h6>
+				<p>32,5 %</p>
+
+            
+            <!-- /Tulot -->
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default" id="terveysmobi">
+            <a aria-controls="collapseTerveys" aria-expanded="false" data-parent=
+              "#mobiilihaitari" data-toggle="collapse" href="#collapseTerveys" role=
+              "button"><div class="panel-heading panel-title" id="headingTerveys" role="tab">
+              <span class="glyphicon glyphicon-heart"></span> Terveys
+            </div></a>
+
+            <div aria-labelledby="headingTerveys" class="panel-collapse collapse"
+            id="collapseTerveys" role="tabpanel">
+              <div class="panel-body">
+            <!-- Terveys -->
+
+              <h4>
+                Terveys
+              </h4>
+
+              <h6>Reseptit <small>Kanta</small></h6>
+
+              <p>
+                <a data-target="#reseptit12" data-toggle="modal" href="#" role=
+                "button">Kestine LYO 20 mg tabletti, kylmäkuivattu</a>
+              </p>
+
+              <p>
+                <a data-target="#reseptit22" data-toggle="modal" href="#" role=
+                "button">BECLONASAL FORTE AQUA 100 mikrog/annos nenäsumute, suspensio</a>
+              </p>
+
+              <p>
+                <a data-target="#reseptit32" data-toggle="modal" href="#" role=
+                "button">LOMUDAL 40 mg/ml silmätipat, liuos, kerta-annospipetti</a>
+              </p>
+
+			<h6>Lääkärintodistukset <small>KANTA</small></h6>
+			<p><a data-target="#laakarintodistus2" data-toggle="modal" href="#"
+                role="button">J06.9 Akuutti ylähengitystieinfektio (22.12.2015)</a></p>
+
+            <!-- /Terveys -->
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default" id="omistuksetmobi">
+            <a aria-controls="collapseOmistukset" aria-expanded="false" data-parent=
+              "#mobiilihaitari" data-toggle="collapse" href="#collapseOmistukset" role=
+              "button"><div class="panel-heading panel-title" id="headingOmistukset" role="tab">
+              <span class="glyphicon glyphicon-duplicate"></span> Omistukset
+            </div></a>
+
+            <div aria-labelledby="headingOmistukset" class="panel-collapse collapse"
+            id="collapseOmistukset" role="tabpanel">
+              <div class="panel-body">            <!-- Omistukset -->
+
+              <h4>
+                Omistukset
+              </h4>
+
+              <h6>Kiinteistöt<small>KR</small></h6>
+
+              <p>
+                <a data-target="#kiinteistot2" data-toggle="modal" href="#"
+                role="button">Tila 123-456-78-90, 1030m&sup2;, Vihti <span class=
+                "glyphicon glyphicon-list-all details"></span></a>
+              </p>
+              <h6>Ajoneuvot
+                <small>ALR</small>
+              </h6>
+
+              <p>
+                <a data-target="#ajoneuvot2" data-toggle="modal" href="#" role=
+                "button">Henkilöauto Alfa Romeo 156 2.0 (ABC-111)</a>
+              </p>
+
+              <h6>Yritykset <small>YTJ</small></h6>
+
+              <p><a data-target="#yritykset2" data-toggle="modal" href="#" role=
+                "button">Pauliinas (1234567-0)</a>
+              </p>
+
+            <!-- /Omistukset -->
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default" id="asetuksetmobi">
+            <a aria-controls="collapseAsetukset" aria-expanded="false" data-parent=
+              "#mobiilihaitari" data-toggle="collapse" href="#collapseAsetukset" role=
+              "button"><div class="panel-heading panel-title" id="headingAsetukset" role="tab">
+              <span class="glyphicon glyphicon-cog"></span> Asetukset
+            </div></a>
+
+            <div aria-labelledby="headingAsetukset" class="panel-collapse collapse"
+            id="collapseAsetukset" role="tabpanel">
+              <div class="panel-body">            <!-- Asetukset -->
+
+            <h4>
+              Asetukset
+            </h4>
+			
+			<h6>Tietolähteet</h6>
+
+				<p><a data-target="#vtj2" data-toggle="modal" href="#" role=
+                "button">Väestötietojärjestelmä</a> <small>VTJ</small></p>
+
+
+				<p><a data-target="#kr2" data-toggle="modal" href="#" role=
+                "button">Kiinteistörekisteri</a> <small>KR</small></p>
+
+              
+				<p><a data-target="#alr2" data-toggle="modal" href="#" role=
+                "button">Ajoneuvoliikennerekisteri</a> <small>ALR</small></p>
+
+
+				<p><a data-target="#ytj2" data-toggle="modal" href="#" role=
+                "button">Yritys- ja yhteisötietojärjestelmä</a> <small>YTJ</small></p>  
+              
+	<p><a data-target="#tor2" data-toggle="modal" href="#" role=
+                "button">Todennetun osaamisen rekisteri</a> <small>TOR</small></p>  
+              
+	<p><a data-target="#tr2" data-toggle="modal" href="#" role=
+                "button">Tulorekisteri</a> <small>TR</small></p> 
+              
+              
+	<p><a data-target="#kanta2" data-toggle="modal" href="#" role=
+                "button">Kansallinen terveysarkisto</a> <small>KANTA</small></p>
+              
+              
+	<p><a data-target="#passi2" data-toggle="modal" href="#" role=
+                "button">Passirekisteri</a> <small>PASSI</small></p>
+
+			<h6>Ilmoitukset</h6>
+			
+			<p><span class=
+                "glyphicon glyphicon-ok"></span> <a data-target="#smsnotify2" data-toggle="modal" href="#" role=
+                "button">Tekstiviesti</a></p>
+			<p><span class=
+                "glyphicon glyphicon-ok"></span> <a data-target="#emailnotify2" data-toggle="modal" href="#" role=
+                "button">Sähköposti</a></p>
+			<p><span class=
+                "glyphicon glyphicon-remove"></span> <a data-target="#calendarnotify2" data-toggle="modal" href="#" role=
+                "button">Kalenteri</a></p>
+
+	<h6>Tietojen luovutus</h6>
+			
+			<p><span class=
+                "glyphicon glyphicon-remove"></span> <a data-target="#suoramarkkinointi2" data-toggle="modal" href="#" role=
+                "button">Suoramarkkinointi</a></p>
+			<p><span class=
+                "glyphicon glyphicon-ok"></span> <a data-target="#asiakasrekisterit2" data-toggle="modal" href="#" role=
+                "button">Asiakasrekisterit</a></p>
+			<p><span class=
+                "glyphicon glyphicon-remove"></span> <a data-target="#henkilomatrikkeli2" data-toggle="modal" href="#" role=
+                "button">Henkilömatrikkeli</a></p>
+			<p><span class=
+                "glyphicon glyphicon-ok"></span> <a data-target="#sukututkimus2" data-toggle="modal" href="#" role=
+                "button">Sukututkimus</a></p>
+                
+                         
+            <!-- /Asetukset -->
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+             <!-- NimiModal2 -->
+
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "nimi2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Nimi
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <h6>
+                        Nimihistoria
+                      </h6>
+
+                      <table class=
+                      "table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            16.7.2011-
+                          </td>
+                          <td>
+                            Kumpulainen, Pauliina Johanna
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            1.1.1980-15.7.2011
+                          </td>
+                          <td>
+                            Ketonen, Pauliina Johanna
+                          </td>
+                        </tr>
+                      </table>
+					<h6>Lisätiedot</h6>
+                      <table class=
+                      "table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Kutsumanimi
+                          </td>
+                          <td>
+                            Paula
+                          </td>
+                        </tr>
+                        </table>
+                                            </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /NimiModal2 -->        
+              <!-- KotiosoiteModal2 -->
+
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "kotiosoite2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Kotiosoite
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <h6>
+                        Osoitehistoria
+                      </h6>
+
+                      <table class=
+                      "table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            28.3.2011-
+                          </td>
+                          <td>
+                            Kotikatu 18, 03100 Vihti
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            16.8.1999-27.3.2011
+                          </td>
+                          <td>
+                            Merkkitie 17 b7, 65100 Vaasa
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            1.1.1980-15.8.1999
+                          </td>
+                          <td>
+                            Karjalankatu 8, 24100 Salo
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /KotiosoiteModal2 -->        
+              
+              <!-- PuolisoModal2 -->
+
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "puoliso2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Puoliso
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <h6>
+                        Avioliitto
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Vihkimispäivä
+                          </td>
+                          <td>
+                            16.7.2011
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Vihkimistapa
+                          </td>
+                          <td>
+                            Siviilivihkiminen
+                          </td>
+                        </tr>
+                      </table>
+
+                      <h6>
+                        Aviopuoliso
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Nimi
+                          </td>
+                          <td>
+                            Kumpulainen Matti Johannes
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Kansalaisuus
+                          </td>
+                          <td>
+                            Suomi
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Syntymäaika
+                          </td>
+                          <td>
+                            12.9.1978
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /PuolisoModal2 -->        
+              
+                   <!-- taiteenmaisterimodal2 -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "taiteenmaisteri2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Taiteen maisteri, Taideteollinen korkeakoulu
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Perustiedot</h6>
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                          Tutkintonimike
+                          </td>
+                          <td>
+                          Taiteen maisteri
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Tutkinnon myöntäjä</td>
+                          <td>Taideteollinen korkeakoulu</td>
+                        </tr>
+                        <tr>
+                          <td>Suorituspäivämäärä</td>
+                          <td>31.5.2007</td>
+                        </tr>
+                    </table>
+                    <h6>Pääaine: Pukusuunnittelu</h6>
+                    <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>Suoritettu laajuus</td>
+                          <td>85 op</td>
+                        </tr>
+                        <tr>
+                          <td>Arvosana</td>
+                          <td>4/5 (kiitettävä)</td>
+                        </tr>
+					  </table>
+                     <h6>Sivuaine: Graafinen suunnittelu</h6>
+                    <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>Suoritettu laajuus</td>
+                          <td>25 op</td>
+                        </tr>
+                        <tr>
+                          <td>Arvosana</td>
+                          <td>3/5 (hyvä)</td>
+                        </tr>
+					  </table>
+					  
+                    <h6>Sivuaine: Yrittäjyys</h6>
+                    <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>Suoritettu laajuus</td>
+                          <td>10 op</td>
+                        </tr>
+                        <tr>
+                          <td>Arvosana</td>
+                          <td>5/5 (erinomainen)</td>
+                        </tr>
+					  </table>
+					  
+					</div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /taiteenmaisterimodal2 --> 
+
+              <!-- taiteenkandimodal2 -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "taiteenkandi2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Taiteen kandidaatti, Taideteollinen korkeakoulu
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Perustiedot</h6>
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                          Tutkintonimike
+                          </td>
+                          <td>
+                          Taiteen kandidaatti
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Tutkinnon myöntäjä</td>
+                          <td>Taideteollinen korkeakoulu</td>
+                        </tr>
+                        <tr>
+                          <td>Suorituspäivämäärä</td>
+                          <td>16.3.2005</td>
+                        </tr>
+                    </table>
+                    <h6>Pääaine: Pukusuunnittelu</h6>
+                    <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>Suoritettu laajuus</td>
+                          <td>110 op</td>
+                        </tr>
+                        <tr>
+                          <td>Arvosana</td>
+                          <td>5/5 (erinomainen)</td>
+                        </tr>
+					  </table>
+                     <h6>Sivuaine: Kasvatustiede</h6>
+                    <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>Suoritettu laajuus</td>
+                          <td>60 op</td>
+                        </tr>
+                        <tr>
+                          <td>Arvosana</td>
+                          <td>3/5 (hyvä)</td>
+                        </tr>
+					  </table>
+					  
+                    <h6>Sivuaine: Filosofia</h6>
+                    <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>Suoritettu laajuus</td>
+                          <td>10 op</td>
+                        </tr>
+                        <tr>
+                          <td>Arvosana</td>
+                          <td>5/5 (erinomainen)</td>
+                        </tr>
+					  </table>
+					  
+					</div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /taiteenkandimodal2 -->
+              
+              <!-- Reseptit1Modal2 -->
+
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "reseptit12" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Reseptit
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <h6>
+                        Kestine LYO 20 mg tabletti, kylmäkuivattu
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Määräyspäivä
+                          </td>
+                          <td>
+                            24.3.2015
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Lääke
+                          </td>
+                          <td>
+                            Kestine LYO 20 mg tabletti, kylmäkuivattu
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Määrätty määrä
+                          </td>
+                          <td>
+                            1X100 fol
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Lääkettä saamatta
+                          </td>
+                          <td>
+                            0
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Resepti voimassa saakka
+                          </td>
+                          <td>
+                            -
+                          </td>
+                        </tr>
+                      </table>
+
+                    </div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Reseptit1Modal2 -->
+              
+              
+              <!-- Reseptit2Modal2 -->
+
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "reseptit22" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Reseptit
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <h6>
+                        BECLONASAL FORTE AQUA 100 mikrog/annos nenäsumute,
+                        suspensio
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Määräyspäivä
+                          </td>
+                          <td>
+                            1.4.2015
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Lääke
+                          </td>
+                          <td>
+                            BECLONASAL FORTE AQUA 100 mikrog/annos nenäsumute,
+                            suspensio
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Määrätty määrä
+                          </td>
+                          <td>
+                            2X200 annosta
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Lääkettä saamatta
+                          </td>
+                          <td>
+                            200 annosta
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Resepti voimassa saakka
+                          </td>
+                          <td>
+                            1.4.2015
+                          </td>
+                        </tr>
+                      </table>
+					</div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Reseptit2Modal2 -->
+
+              <!-- Reseptit3Modal2 -->
+
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "reseptit32" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Reseptit
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <h6>
+                        LOMUDAL 40 mg/ml silmätipat, liuos, kerta-annospipetti
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Määräyspäivä
+                          </td>
+                          <td>
+                            1.4.2014
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Lääke
+                          </td>
+                          <td>
+                            LOMUDAL 40 mg/ml silmätipat, liuos,
+                            kerta-annospipetti
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Määrätty määrä
+                          </td>
+                          <td>
+                            3X60 x 0,35 ml
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Lääkettä saamatta
+                          </td>
+                          <td>
+                            2X60X0,35 ML
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Resepti voimassa saakka
+                          </td>
+                          <td>
+                            1.4.2015
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Reseptit3Modal2 -->
+
+              <!-- akuuttimodal2 -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "laakarintodistus2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Lääkärintodistus
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Sairauden tiedot</h6>
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                          Merkittävin työkykyä alentava sairaus tai vamma
+                          </td>
+                          <td>
+                          J06.9 Akuutti ylähengitystieinfektio
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Muut työkykyä alentavat sairaudet</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>Työkyvyttömyysaika</td>
+                          <td>22.12.2015-23.12.2015</td>
+                        </tr>
+                        <tr>
+                          <td>Päivä, jona lääkäri totesi työkyvyttömyyden</td>
+                          <td>22.12.2015</td>
+                        </tr>
+                        <tr>
+                          <td>Kuntoutusarve</td>
+                          <td>Tällä hetkellä ei tarvetta</td>
+                        </tr>
+					  </table>
+                    <h6>Lääkärin tiedot</h6>
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                          Nimi
+                          </td>
+                          <td>
+                          Lasse Lääkäri
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                          Rekisteröintitunnus
+                          </td>
+                          <td>
+                          10023456789
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                          Puhelinnumero
+                          </td>
+                          <td>
+                          040 1234567
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /akuuttimodal2 -->                     
+<!-- KiinteistötModal2 -->
+
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "kiinteistot2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Kiinteistö 123-456-78-90
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <h6>
+                        Perustiedot
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Rekisteriyksikkölaji
+                          </td>
+                          <td>
+                            Tila
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Kunta
+                          </td>
+                          <td>
+                            Vihti
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Pinta-ala
+                          </td>
+                          <td>
+                            1030 m&sup2;
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Nimi
+                          </td>
+                          <td>
+                            K350t5
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Omistusmuoto
+                          </td>
+                          <td>
+                            Omistaja
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Omistusosuus
+                          </td>
+                          <td>
+                            1/2
+                          </td>
+                        </tr>
+                      </table>
+
+                      <h6>
+                        Panttikirjat
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Päiväys
+                          </td>
+                          <td>
+                            1.7.2010
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Tunnus
+                          </td>
+                          <td>
+                            111/pp.kk.vvvv/12345
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Kohde (kiinteistötunnus)
+                          </td>
+                          <td>
+                            123-456-78-90
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Kiinnitys
+                          </td>
+                          <td>
+                            50 000,00 ä
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Muoto
+                          </td>
+                          <td>
+                            Kirjallinen
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Saajat/Haltijat
+                          </td>
+                          <td>
+                            Pankki Oyj
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /KiinteistötModal2 -->   
+              
+              <!-- AjoneuvoModal2 -->
+
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "ajoneuvot2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Henkilöauto Alfa Romeo 156 2.0 (ABC-111)
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <h6>
+                        Perustiedot
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Haltija
+                          </td>
+                          <td>
+                            Kumpulainen, Pauliina Johanna
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Omistaja
+                          </td>
+                          <td>
+                            Kumpulainen, Matti Johannes
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Rekisteritunnus
+                          </td>
+                          <td>
+                            ABC-111
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Valmistenumero
+                          </td>
+                          <td>
+                            ZAR93200000001234567
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Ensirekisteröinti Suomeen
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Tyyppihyväksyntänumero
+                          </td>
+                          <td>
+                            e3*98/14*0034*10
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Variantti
+                          </td>
+                          <td>
+                            AXA100
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Versio
+                          </td>
+                          <td>
+                            52B
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Käyttö
+                          </td>
+                          <td>
+                            Yksityinen
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Vakuutus
+                          </td>
+                          <td>
+                            Vakuutusyhtiö Oy 11.12.2012
+                          </td>
+                        </tr>
+                      </table>
+
+                      <h6>
+                        Moottorin tiedot
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Iskutilavuus
+                          </td>
+                          <td>
+                            1970 cm&sup3;
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Käyttövoima
+                          </td>
+                          <td>
+                            Bensiini
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Suurin nettoteho
+                          </td>
+                          <td>
+                            122 kW
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Melu ohiajossa
+                          </td>
+                          <td>
+                            72 dB
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Melu paikoillaan
+                          </td>
+                          <td>
+                            80 dB
+                          </td>
+                        </tr>
+                      </table>
+
+                      <h6>
+                        Katsastustiedot
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Määräaikaiskatsastettu
+                          </td>
+                          <td>
+                            16.4.2014
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Seuraava katsastusväli
+                          </td>
+                          <td>
+                            25.7.2014-25.11.2015
+                          </td>
+                        </tr>
+                      </table>
+
+                      <h6>
+                        Kulutus- ja päästötiedot
+                      </h6>
+
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Kulutus maantieajossa
+                          </td>
+                          <td>
+                            6,6 l/100 km
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Kulutus kaupunkiajossa
+                          </td>
+                          <td>
+                            12,2 l/100 km
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Yhdistetty kulutus
+                          </td>
+                          <td>
+                            8,6 l/100 km
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            C02 Yhdistetty
+                          </td>
+                          <td>
+                            205 g/km
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /AjoneuvotModal2 -->
+
+              <!-- YrityksetModal2 -->
+
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "yritykset2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Pauliinas (1234567-0)
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Y-tunnus
+                          </td>
+                          <td>
+                            1234567-0
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Toiminimi
+                          </td>
+                          <td>
+                            Pauliinas
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Yritysmuoto
+                          </td>
+                          <td>
+                            Yksityinen elinkeinonharjoittaja
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Kotipaikka
+                          </td>
+                          <td>
+                            Vihti
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Yrityksen kieli
+                          </td>
+                          <td>
+                            suomi
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Päätoimiala
+                          </td>
+                          <td>
+                            Teollinen muotoilu (74109)
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Postiosoite
+                          </td>
+                          <td>
+                            Kotikatu 18, 03100 Vihti
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Sähköposti
+                          </td>
+                          <td>
+                            pauliina.kumpulainen@sahkoposti.fi
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            Puhelin
+                          </td>
+                          <td>
+                            +358401234567
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /YrityksetModal2 -->
+              
+              <!-- VTJmodal2 -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "vtj2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Väestötietojärjestelmä <small>VTJ</small>
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.vaestorekisterikeskus.fi/" target=
+                "_blank">Väestörekisterikeskus</a>
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /VTJmodal2 -->
+
+              <!-- KRmodal2 -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "kr2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Kiinteistörekisteri <small>KR</small>
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.maanmittauslaitos.fi/" target=
+                "_blank">Maanmittauslaitos</a>
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /KRmodal2 -->
+
+              <!-- ALRmodal2 -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "alr2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Ajoneuvoliikennerekisteri <small>ALR</small>
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.trafi.fi/" target=
+                "_blank">Liikenteen turvallisuusvirasto Trafi</a>
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /ALRmodal2 -->
+
+              <!-- YTJmodal2 -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "ytj2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Yritys- ja yhteisötietojärjestelmä <small>YTJ</small>
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.prh.fi/" target=
+                "_blank">Patentti- ja rekisterihallitus</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.vero.fi/" target=
+                "_blank">Verohallinto</a>
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /YTJmodal2 -->    
+
+              <!-- TORmodal2 -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "tor2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Todennetun osaamisen rekisteri <small>TOR</small>
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.oph.fi/" target=
+                "_blank">Opetushallitus</a>
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /TORmodal2 -->    
+              
+              <!-- TRmodal2 -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "tr2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Tulorekisteri <small>TR</small>
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.vero.fi/" target=
+                "_blank">Verohallinto</a>
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /TRmodal2 -->  
+
+              <!-- KANTAmodal2 -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "kanta2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Kansallinen terveysarkisto <small>KANTA</small>
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.oph.fi/" target=
+                "_blank">Sosiaali- ja terveysministeriö</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.kela.fi/" target=
+                "_blank">Kansaneläkelaitos</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.thl.fi/" target=
+                "_blank">Terveyden ja hyvinvoinnin laitos</a>
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /KANTAmodal2 --> 
+
+              <!-- PASSImodal2 -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "passi2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Passirekisteri <small>PASSI</small>
+                      </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <table class="table table-hover table-condensed tarkattiedot">
+                        <tr>
+                          <td>
+                            Rekisterin ylläpitäjä
+                          </td>
+                          <td>
+                            <a href="http://www.poliisi.fi/" target=
+                "_blank">Poliisi</a>
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /PASSImodal2 -->  
+
+              <!-- SMSmodal2 -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "smsnotify2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Tekstiviesti-ilmoitukset
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Salli ilmoitukset seuraavilta viranomaisilta</h6>
+                      <table class="table table-hover table-condensed">
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Väestörekisterikeskus
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Maanmittauslaitos
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Liikenteen turvallisuusvirasto Trafi
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Patentti- ja rekisterihallitus
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Opetushallitus
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Verohallinto
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Kansaneläkelaitos
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Poliisi
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-dismiss="modal" type="button">Tallenna</button>
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /SMSmodal2 -->
+              
+              <!-- EMAILmodal2 -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "emailnotify2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Sähköposti-ilmoitukset
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Salli ilmoitukset seuraavilta viranomaisilta</h6>
+                      <table class="table table-hover table-condensed">
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Väestörekisterikeskus
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Maanmittauslaitos
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Liikenteen turvallisuusvirasto Trafi
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Patentti- ja rekisterihallitus
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Opetushallitus
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Verohallinto
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+                            Kansaneläkelaitos
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Poliisi
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-dismiss="modal" type="button">Tallenna</button>
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /EMAILmodal2 -->
+              
+              <!-- CALmodal2 -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "calendarnotify2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Kalenteri-ilmoitukset
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Salli ilmoitukset seuraavilta viranomaisilta</h6>
+                      <table class="table table-hover table-condensed">
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Väestörekisterikeskus
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Maanmittauslaitos
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Liikenteen turvallisuusvirasto Trafi
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Patentti- ja rekisterihallitus
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Opetushallitus
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Verohallinto
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Kansaneläkelaitos
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Poliisi
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-dismiss="modal" type="button">Tallenna</button>
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /CALmodal2 -->
+                
+              <!-- suoramarkkinointimodal2 -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "suoramarkkinointi2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Suoramarkkinointi
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Tietojen luovutus suoramarkkinointiin</h6>
+                      <table class="table table-hover table-condensed">
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+                            Nimi- ja osoitetietoja voidaan luovuttaa suoramarkkinointitarkoituksiin tai markkina- ja mielipidetutkimuksiin. Suoramarkkinointi koskee vain postitse saapuvaa mainontaa.
+                          </td>
+                        </tr>
+					  </table>
+
+					</div>
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-dismiss="modal" type="button">Tallenna</button>
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /suoramarkkinointimodal2 -->                
+                
+                
+              <!-- asiakasrekisterimodal2 -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "asiakasrekisterit2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Suoramarkkinointi
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Tietojen luovutus suoramarkkinointiin</h6>
+                      <table class="table table-hover table-condensed">
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+							Tietoja voidaan luovuttaa yrityksille, jotka päivittävät asiakasrekistereitään väestötietojärjestelmän tiedoilla (esimerkiksi lehtitalot). Pankeille, vakuutusyhtiöille, Veikkaus Oy:lle, Raha-automaattiyhdistykselle sekä Fintoto Oy:lle tiedot voidaan lain nojalla luovuttaa kiellosta huolimatta.
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-dismiss="modal" type="button">Tallenna</button>
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /asiakasrekisterimodal2 -->   
+
+              <!-- henkilomatrikkelimodal2 -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "henkilomatrikkeli2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Henkilömatrikkeli
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Tietojen luovutus henkilömatrikkeleihin</h6>
+                      <table class="table table-hover table-condensed">
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="...">
+                          </td>
+                          <td>
+							Tietoja voidaan luovuttaa esimerkiksi oppilaitoksen entisistä oppilaista tai tietyn tutkinnon suorittaneista tehtävää matrikkelia varten.
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-dismiss="modal" type="button">Tallenna</button>
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /henkilomatrikkelimodal2 -->   
+
+
+              <!-- sukututkimusmodal2 -->
+              <div aria-labelledby="myModalLabel" class="modal fade" id=
+              "sukututkimus2" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4>
+                        Sukututkimus
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                    <h6>Tietojen luovutus sukututkimukseen</h6>
+                      <table class="table table-hover table-condensed">
+                        <tr>
+                          <td>
+       						 <input type="checkbox" aria-label="..." checked>
+                          </td>
+                          <td>
+							Tietoja voidaan luovuttaa sukututkimustarkoituksiin.
+                          </td>
+                        </tr>
+					  </table>
+					</div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-dismiss="modal" type="button">Tallenna</button>
+                      <button class="btn btn-default" data-dismiss="modal"
+                      type="button">Sulje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /sukututkimusmodal2 -->      
+                               
+        <!-- /Mobiiliversio -->
+
+      </div>
+    </div>
+    <!-- /container -->
+  </body>
+</html>

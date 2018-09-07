@@ -1,0 +1,182 @@
+<html>
+<head>
+<script src="https://bootswatch.com/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="https://bootswatch.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://bootswatch.com/bower_components/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://bootswatch.com/yeti/bootstrap.min.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kaikki minusta -kilpailutyö - Tietojen luovutus</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2"> <span class="sr-only">Toggle navigation</span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+
+            </button> <a class="navbar-brand" href="#">Kaikki minusta -kilpailutyö</a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="omattiedot.html">Omat tiedot</a>
+
+                </li>
+                <li class="active"><a href="tietojenluovutus.html">Tietojen luovutus</a>
+
+                </li>
+                <li><a href="index.html">Kirjaudu ulos</a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+ <h2>Tietojen luovutus</h2>
+Tällä sivustolla voit hallita tietojesi luovuttamiskäytäntöjä. Luovuttamiskäytännöt jakautuvat yleisiin luovutuskieltoihin ja erityisiin valtuutuksiin. Huomaathan, että tekemisistäsi valinnoista huolimatta viranomaiset saavat <a href="#">tietyissä tilanteissa lain nojalla</a> luovuttaa tietoja toisilleen.
+    <h3>Luovutuskiellot</h3>
+    <table class="table table-hover">
+        <tr>
+            <td><input type="checkbox"></td>
+                <td>Viranomaiset eivät saa luovuttaa toisilleen minusta tallentamiaan tietoja ilman erillistä lupaa.</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+                <td>Tietojani ei saa luovuttaa suoramarkkinointiin ilman erillistä lupaa.
+                </td>
+            </tr>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+                <td>Osoitetietojani ei saa luovuttaa ilman erillistä lupaa.
+                </td>
+            </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+                <td>Puhelinnumeroani ei saa luovuttaa ilman erillistä lupaa.
+                </td>
+            </tr>
+        </table>
+        <button type="button" class="btn btn-default btn-sm">Palauta</button>
+        <button type="button" class="btn btn-primary btn-sm">Tallenna</button>            
+            <h3>Valtuutukset</h3>
+    <table class="table">
+        <tr>
+            <th>Organisaatio</th>
+            <th>Käyttöoikeus</th>
+            <th>Valtuutus annettu</th>
+            <th></th>
+        </tr>
+            <td><img src="http://www.sonera.fi/mediaObject/telia-se/newsroom/placeholder/2_Sonera_Full_R_original_1322x461/original/2_Sonera_Full_R_original_1322x461.png" width="100" alt="Sonera" /></td>
+                <td>Henkilötunnus, nimi, sähköpostiosoite, kotiosoite</td>
+        <td>12.7.2015</td>
+        <td>
+<!-- Poista -->
+<button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#soneraVahvistus">Poista</button>
+<!-- Modal -->
+<div class="modal fade" id="soneraVahvistus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Vahvistus</h4>
+      </div>
+      <div class="modal-body">
+          Haluatko varmasti poistaa organisaation <strong>Sonera</strong> valtuutuksen tietojesi käyttöön?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Peruuta</button>
+        <button type="button" class="btn btn-primary">Vahvista</button>
+      </div>
+    </div>
+  </div>
+</div><!-- /Poista -->
+        </td>
+                </tr>
+            <tr>
+            <td><img src="https://www.terveystalo.com/design/images/terveystalo-logo.png" width="100" alt="Terveystalo" /></td>
+                <td>Henkilötunnus, nimi, kotiosoite, ammatti, hoitohistoria, reseptit
+                </td>
+                <td>30.8.2015</td>
+      <td>
+<!-- Poista -->
+<button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#ttVahvistus">Poista</button>
+<!-- Modal -->
+<div class="modal fade" id="ttVahvistus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Vahvistus</h4>
+      </div>
+      <div class="modal-body">
+          Haluatko varmasti poistaa organisaation <strong>Terveystalo</strong> valtuutuksen tietojesi käyttöön?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Peruuta</button>
+        <button type="button" class="btn btn-primary">Vahvista</button>
+      </div>
+    </div>
+  </div>
+</div><!-- /Poista -->
+      </td>
+                </tr>
+            <tr>
+            <td><img src="https://shop.vr.fi/onlineshop/pages/ram/img/vr-logo-ongreen-160x85.png" width="100" alt="VR" /></td>
+                <td>Sähköinen asiointitunnus, nimi, kotiosoite, sähköpostiosoite, puhelinnumero                </td>
+        <td>1.8.2015</td>
+        <td>
+<!-- Poista -->
+<button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#vrVahvistus">Poista</button>
+<!-- Modal -->
+<div class="modal fade" id="vrVahvistus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Vahvistus</h4>
+      </div>
+      <div class="modal-body">
+          Haluatko varmasti poistaa organisaation <strong>VR</strong> valtuutuksen tietojesi käyttöön?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Peruuta</button>
+        <button type="button" class="btn btn-primary">Vahvista</button>
+      </div>
+    </div>
+  </div>
+</div><!-- /Poista -->
+        </td>                </tr>
+            <tr>
+            <td><img src="https://www.fennia.fi/static/img/fennia-logo-print.png" width="100" alt="Fennia" /></td>
+                <td>Sähköinen asiointitunnus, nimi, kotiosoite, kotikunta, ammatti
+                </td>
+        <td>15.7.2015</td>
+        <td>
+<!-- Poista -->
+<button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#fenniaVahvistus">Poista</button>
+<!-- Modal -->
+<div class="modal fade" id="fenniaVahvistus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Vahvistus</h4>
+      </div>
+      <div class="modal-body">
+          Haluatko varmasti poistaa organisaation <strong>Fennia</strong> valtuutuksen tietojesi käyttöön?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Peruuta</button>
+        <button type="button" class="btn btn-primary">Vahvista</button>
+      </div>
+    </div>
+  </div>
+</div><!-- /Poista -->
+        </td>
+                </tr>
+            </table>
+                
+                </div>
